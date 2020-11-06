@@ -44,10 +44,10 @@ void not_prime_number(int num[total_num]){
   int not_prime_num[total_num]; // 該当するものをここに格納する
   for(array_num=0; array_num<total_num; array_num++){
     flag = 0;
-    break;
     for(int i=2; i<num[array_num]; i++){
       /* num[array_num]が割り切れた場合，フラグを立てる． */
       flag = 1; //if文の中の一部
+      break;
     }
     if(flag==1){                 // flagが1の時，not_prime_num[count]にnum[array_num]を追加していく．
       not_prime_num[count] = num[array_num];
