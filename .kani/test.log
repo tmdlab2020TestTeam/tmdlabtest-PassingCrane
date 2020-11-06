@@ -78,3 +78,22 @@ error : status 0
 22:02:29 cd ..
 22:02:33 git add .
 22:03:44 git commit -a -m "2nd add"
+22:03:55 git push origin main
+22:04:16 cd src
+22:04:22 nano 03_test.c
+22:04:32 cd ..
+22:04:38 git kani disable
+22:04:45 cd src
+22:04:50 nano  03_test.c
+22:09:40 gcc 03_test.c
+error : status 0
+22:09:44 ./a.out
+22:09:52 nano  03_test.c
+22:11:28 gcc 03_test.c
+error : status 0
+22:11:32 git add.
+22:11:36 git add .
+22:11:38 cd ..
+22:11:42 git add .
+22:11:54 git -a -m "3th add?"
+22:12:03 git commit -a -m "3th add?"
