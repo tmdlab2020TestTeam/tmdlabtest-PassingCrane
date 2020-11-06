@@ -36,8 +36,6 @@ void quick_sort(int left, int right){
       tmp = sort_num[l];        // num[i]とnum[j]を交換する．
       sort_num[l] = sort_num[r];
       /* sort_num[r]にキープしていたtmpを入れる */      
-      tmp=sort_num[l];
-      sort_num[l]=sort_num[r];
       sort_num[r]=tmp;
       l++;                    
       r--;
