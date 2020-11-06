@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int total_num = 20;
@@ -25,6 +26,7 @@ void selection_sort(int num[total_num]){
     }
     if(min != array_num){
       /* tmpにnum[array_num]を格納する */
+      tmp=num[array_num];
       num[array_num] = num[min];
       num[min] = tmp;
       count++;
@@ -42,6 +44,7 @@ void not_prime_number(int num[total_num]){
   int not_prime_num[total_num]; // 該当するものをここに格納する
   for(array_num=0; array_num<total_num; array_num++){
     flag = 0;
+    break;
     for(int i=2; i<num[array_num]; i++){
       /* num[array_num]が割り切れた場合，フラグを立てる． */
       flag = 1; //if文の中の一部

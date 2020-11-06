@@ -55,3 +55,11 @@ error : status 0
 21:54:07 ./a.out
 21:54:16 git add .
 21:54:22 git commit -a -m "2nd add?_3"
+21:54:26 git push origin main
+21:54:48 git push origin main
+21:55:44 nano 02_test.c
+21:57:22 gcc 02_test.c
+error : status 0
+21:57:25 ./a.out
+21:57:35 git add .
+21:57:40 git commit -a -m "2nd add?_4"
