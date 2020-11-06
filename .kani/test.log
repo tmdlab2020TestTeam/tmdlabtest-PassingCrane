@@ -1,0 +1,27 @@
+19:55:39 ls
+19:56:08 exit
+21:24:00 ls
+21:24:16 ls src
+21:24:23 nano src/01_test.c
+21:27:03 git kani disable
+21:27:14 nano src/01_test.c
+21:30:35 gcc src/01_test.c
+error : status 1
+21:30:41 nano src/01_test.c
+21:31:06 gcc src/01_test.c
+error : status 0
+21:31:24 cd src
+21:31:25 ls
+21:31:40 ls -a
+21:32:01 gcc src/01_test.c
+error : status 1
+21:32:06 gcc 01_test.c
+error : status 0
+21:32:10 ls -a
+21:33:05 ./a.out
+21:34:32 cat ../.kani/test.log
+21:35:23 cd ..
+21:35:42 git add 
+21:35:50 git add .
+21:36:01 git branch
+21:36:22 git commit -a -m "1st add"

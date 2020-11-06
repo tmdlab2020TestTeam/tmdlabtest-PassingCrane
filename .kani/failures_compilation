@@ -1,0 +1,4 @@
+gcc src/01_test.c : 1
+gcc src/01_test.c : 0
+gcc src/01_test.c : 1
+gcc 01_test.c : 0

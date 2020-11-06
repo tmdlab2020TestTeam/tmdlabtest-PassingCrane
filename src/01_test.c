@@ -19,6 +19,9 @@ void bubble_sort(int num[total_num]){
     for(i=total_num-1; i>array_num; i--){
       if(num[i] < num[i-1]){
         /* 配列前後の値を入れ替える．tmpで一時的に値を退避させておく．*/
+	tmp=num[i];
+	num[i]=num[i-1];
+	num[i-1]=tmp;
       }
     }
   }
@@ -34,6 +37,12 @@ void prime_number(int num[total_num]){
   for(array_num=0; array_num<total_num; array_num++){
     flag = 0;
     /* for文で2倍3倍..とnum[array_num]まで回して，num[array_num]が割り切れた場合flagを立てる．*/
+    for(int i=2; i<num[array_num];i++){
+	if(num[array_num]%i==0){
+		flag=1;
+		break;
+		}
+	}
     if(flag==0){
       prime_num[count] = num[array_num];
       count++;
