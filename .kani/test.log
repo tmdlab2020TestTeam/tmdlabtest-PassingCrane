@@ -46,3 +46,12 @@ error : status 0
 error : status 0
 21:50:48 git add .
 21:50:56 git commit -a -m "2nd add?_2"
+21:51:01 git push origin main
+21:51:23 git push origin main
+21:53:03 ./a.out
+21:53:29 nano 02_test.c
+21:54:02 gcc 02_test.c
+error : status 0
+21:54:07 ./a.out
+21:54:16 git add .
+21:54:22 git commit -a -m "2nd add?_3"

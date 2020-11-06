@@ -4,3 +4,4 @@ gcc src/01_test.c : 1
 gcc 01_test.c : 0
 gcc src/02_test.c : 0
 gcc 02_test.c : 0
+gcc 02_test.c : 0
