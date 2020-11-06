@@ -110,3 +110,5 @@ error : status 0
 22:14:56 git add .
 22:15:02 git commit -a -m 
 22:15:25 git commit -a -m "3th add"
+22:15:33 git push origin main
+22:16:13 git add .kani/test.log
