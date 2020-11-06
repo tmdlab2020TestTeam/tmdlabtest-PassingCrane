@@ -25,3 +25,17 @@ error : status 0
 21:35:50 git add .
 21:36:01 git branch
 21:36:22 git commit -a -m "1st add"
+21:36:43 git push origin main
+21:38:58 git kani  enable
+21:39:52 nano src/02_test.c
+21:43:14 nano src/02_test.c
+21:44:14 gcc src/02_test.c
+error : status 0
+21:44:46 ./src/a.out
+21:44:58 git add .
+21:45:23 git commit -m -a "2nd add(?)"
+21:45:50 git commit -m -a '2nd add?'
+21:46:01 git add .
+21:46:13 git commit -m -a "2nd add?"
+21:47:11 history
+21:47:20 git commit -a -m "2nd add?"

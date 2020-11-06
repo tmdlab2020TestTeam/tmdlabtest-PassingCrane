@@ -19,6 +19,9 @@ void selection_sort(int num[total_num]){
     min = array_num;                           // 最小値の配列番号を入れる．
     for(int i=array_num+1; i<total_num; i++){  // for文で回して，minより小さい値があれば置き換える．
       /* num[i]がnum[min]より小さい時，minの配列番号をiに書き換える */
+	if(num[i]<num[min]){
+		min=i;
+	}
     }
     if(min != array_num){
       /* tmpにnum[array_num]を格納する */
@@ -42,6 +45,7 @@ void not_prime_number(int num[total_num]){
     for(int i=2; i<num[array_num]; i++){
       /* num[array_num]が割り切れた場合，フラグを立てる． */
       flag = 1; //if文の中の一部
+      break;
     }
     if(flag==1){                 // flagが1の時，not_prime_num[count]にnum[array_num]を追加していく．
       not_prime_num[count] = num[array_num];
